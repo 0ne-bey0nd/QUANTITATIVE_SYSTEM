@@ -1,4 +1,4 @@
-#include "test.h"
+#include "test_main.h"
 
 int separator(int length)
 {

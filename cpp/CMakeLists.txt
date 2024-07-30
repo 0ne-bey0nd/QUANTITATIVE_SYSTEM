@@ -15,12 +15,13 @@ project ("QUANTITATIVE_SYSTEM")
 add_executable (QUANTITATIVE_SYSTEM "QUANTITATIVE_SYSTEM.cpp" "QUANTITATIVE_SYSTEM.h" "new.cpp" )
 include_directories(
 	"include/rapidjson/include"
+	"include/ctp"
 )
-
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET QUANTITATIVE_SYSTEM PROPERTY CXX_STANDARD 20)
 endif()
+
 
 add_subdirectory("./test_cpp")
 
